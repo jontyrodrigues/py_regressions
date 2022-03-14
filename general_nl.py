@@ -62,6 +62,7 @@ for key in parameters:
     print('%s = %.12f' % (key, popt[j]))
 
 # This is the R^2 value of the fit
+# First we calculate the predicted values and the perform the r2_score on predicted vs actual values
 y_pred = []
 for i in range(len(x['x [unit]'])):
     y_pred.append(funct_2(x['x [unit]'][i],popt))
