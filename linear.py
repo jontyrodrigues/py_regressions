@@ -1,6 +1,4 @@
-# take inputs from the user in the form of x and y data store the x and y data in list
-# and then perform a linear regression on the data
-# and then print the slope and intercept of the line
+import matplotlib.pyplot as plt
 print("This program will perform a linear regression on the data you enter")
 x = []
 y = []
@@ -33,3 +31,27 @@ intercept = y_mean - slope*x_mean
 # print the slope and intercept
 print("The slope of the line is: ", slope)
 print("The intercept of the line is: ", intercept)
+# using the slope and intercept calculate the y values of the line for the x values
+y_line = []
+for i in range(n):
+    y_line.append(slope*x[i]+intercept)
+# calculate the pearson correlation coefficient
+y_y_calc_sum = 0
+y_calc_sum = 0
+y_calc_sum_sq = 0
+# calculate the sum of the y_line data
+for i in range(n):
+    y_calc_sum += y_line[i]
+    y_calc_sum_sq += y_line[i]**2
+    y_y_calc_sum += y_line[i]*y[i]
+r = (n*y_y_calc_sum - y_calc_sum*y_sum)/((n*y_sum_sq - y_sum**2)*(n*y_calc_sum_sq - y_calc_sum**2))**0.5
+# print the pearson correlation coefficient
+print("The pearson correlation coefficient is: ", r)
+# calculate the r squared
+r_sq = r**2
+# print the r squared
+print("The r squared is: ", r_sq)
+# plot the data and the line
+plt.plot(x,y,'ro')
+plt.plot(x,y_line)
+plt.show()
