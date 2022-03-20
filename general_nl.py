@@ -6,13 +6,13 @@ from sklearn.metrics import r2_score
 
 x = pd.read_csv('data.csv')
 
-print("Python Program To Fit A General Non-Linear Function To A Set Of Data")
+print("Python Program To Fit A General Non-Linear Function To A Set Of Data \n")
 # Get the no of parameters in the function
 number_of_parameters = int(input('Enter number of parameters: '))
 parameters = {}
 # Get the parameters
 for i in range(number_of_parameters):
-    parameters[str(input('Enter name of parameter '+str(i)+': '))] = float(input('Enter the initial guess of parameter '+str(i)+': '))
+    parameters[str(input('Enter name of parameter '+str(i+1)+': '))] = float(input('Enter the initial guess of parameter '+str(i+1)+': '))
 # Get the function from the user in the python format
 fun = input('Enter the fitting function: ')
 
