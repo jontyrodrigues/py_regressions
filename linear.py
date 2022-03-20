@@ -10,11 +10,8 @@ for i in range(n):
 x_mean = sum(x)/n
 y_mean = sum(y)/n
 # calculate the sum of the x and y data
-x_sum = 0
-y_sum = 0
-for i in range(n):
-    x_sum += x[i]
-    y_sum += y[i]
+x_sum = sum(x)
+y_sum = sum(y)
 # calculate the sum of the x and y data squared
 x_sum_sq = 0
 y_sum_sq = 0
