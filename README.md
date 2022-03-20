@@ -20,6 +20,7 @@ The equation of a line is given by y = mx + c.<br>
 The formula to calculate the slope is:<br>
 $c = \frac{(\sum y)(\sum x^2 ) - (\sum x)(\sum xy)}{n(\sum x^2) - (\sum x)^2 }$ <br><br>
 $m = \frac{n (\sum xy) - (\sum x)(\sum y)}{n(\sum x^2) - (\sum x)^2 }$
+Where x and y are the mean of the x and y values of the data points.
 
 
 #### Working 
