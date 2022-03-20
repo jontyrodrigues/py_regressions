@@ -20,7 +20,7 @@ Linear regression is a way to model the relationship between two variables, whic
 The equation of a line is given by y = mx + c.<br>
 The formula to calculate the slope is:<br>
 
-<img src ="https://quicklatex.com/cache3/f9/ql_3871410c07f74d0794499b1ad30e1df9_l3.png"></img>
+<img src ="https://quicklatex.com/cache3/f9/ql_3871410c07f74d0794499b1ad30e1df9_l3.png"></img><br>
 Where x and y are the mean of the x and y values of the data points.
 
 #### Working
